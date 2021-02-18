@@ -64,6 +64,7 @@ class _WebViewExampleState extends State<WebViewExample> {
           children: <Widget>[
             Builder(builder: (BuildContext context) {
               return WebView(
+                userAgent: "Chrome/81.0.0.0 Mobile",
                 initialUrl: 'https://www.khmeradverts.com/',
                 javascriptMode: JavascriptMode.unrestricted,
                 onWebViewCreated: (WebViewController webViewController) {
